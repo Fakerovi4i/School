@@ -1,0 +1,17 @@
+def zip_f(first, second):
+  if len(first) <= len(second):
+    new_zip = [tuple([first[i], second[i]]) for i in range(len(first))]
+  else:
+    new_zip = [tuple([first[i], second[i]]) for i in range(len(second))]
+  
+  return new_zip
+
+str = "abcd"
+tup_num = (10, 20, 30, 40)
+
+zip_list = zip(str, tup_num)
+#zip_list = zip_f(str, tup_num) #Вторая итерация через функцию
+
+print(zip_list)
+for i in zip_list:
+  print(i)
