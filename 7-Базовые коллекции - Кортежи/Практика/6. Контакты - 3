@@ -1,5 +1,5 @@
 def add_contact():
-  print("Для добавления нового контакта")
+  print("\nДля добавления нового контакта")
   name_surname = input("Введите ИФ через пробел: ").split()
   name_surname = tuple(name_surname)
   if name_surname in contakt_book:
@@ -7,7 +7,7 @@ def add_contact():
     print("Текущий список контактов:\n", contakt_book)
     add_contact()
   else:
-    phone_number = int(input("Введите номер телефона: "))
+    phone_number = input("Введите номер телефона: ")
     contakt_book[name_surname] = phone_number
   main()
   
@@ -23,7 +23,7 @@ def find_people():
     
     
 def menu():
-  print("Меню:\n"
+  print("\nМеню:\n"
   "1. Добаивть контакт\n"
   "2. Найти человека\n"
   "3. Завершить")
@@ -36,9 +36,9 @@ contakt_book = dict()
 
 def main():
   if contakt_book:
-    print("Текущий список контактов:\n", contakt_book)
+    print("\nТекущий список контактов:\n", contakt_book)
   else:
-    print("Текущий список контактов пуст.\n")
+    print("Текущий список контактов пуст.")
   choice = menu()
   if choice == "1":
     add_contact()
