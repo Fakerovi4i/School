@@ -1,0 +1,9 @@
+def num_count(numb):
+    if numb == 0:
+        return 0
+    new = num_count(numb-1)
+    print(new+1)
+    return numb
+    
+num = 10
+num_count(num)
