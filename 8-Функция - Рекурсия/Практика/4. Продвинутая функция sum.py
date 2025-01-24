@@ -2,7 +2,7 @@ def sum(*args):
 	if
 	summ = 0
 	for i in args:
-		summ += i
+		summ += ii
 
 
 	print(summ)
